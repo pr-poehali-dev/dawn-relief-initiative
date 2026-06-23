@@ -1,101 +1,108 @@
 import { LiquidCtaButton } from "@/components/buttons/LiquidCtaButton"
-import { Sparkles, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20 relative">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-28 pb-20 relative">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/50 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/30 via-transparent to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto">
-        {/* Badge - customize your announcement */}
+        {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/80 border border-zinc-800 mb-8">
-          <Sparkles className="w-4 h-4 text-zinc-400" />
-          <span className="text-sm text-zinc-400">Встречайте v2.0 — теперь с ИИ</span>
+          <Icon name="Truck" className="w-4 h-4 text-blue-400" />
+          <span className="text-sm text-zinc-400">Доставка из Китая в Россию «под ключ»</span>
         </div>
 
-        {/* Headline - customize your value proposition */}
-        <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          <span className="text-zinc-100 block">Создавай быстрее.</span>
-          <span className="bg-gradient-to-r from-zinc-500 via-zinc-300 to-zinc-500 bg-clip-text text-transparent">
-            Запускай умнее.
+        {/* Headline */}
+        <h1 className="font-display text-4xl md:text-6xl font-bold tracking-tight mb-6">
+          <span className="text-zinc-100 block">Помогаем бизнесу</span>
+          <span className="bg-gradient-to-r from-blue-500 via-blue-300 to-blue-500 bg-clip-text text-transparent">
+            увеличить прибыль
           </span>
         </h1>
 
-        {/* Subheadline - describe your product */}
-        <p className="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-          Единая платформа, которая помогает командам создавать, развертывать и масштабировать продукты в 10 раз быстрее. Без сложностей, только результат.
+        {/* Subheadline */}
+        <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
+          Поиск товара и поставщика, беспроцентный выкуп, консолидация груза, фулфилмент и доставка. Полный цикл логистики из Китая, чтобы вы достигали максимальных результатов.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a href="#pricing">
-            <LiquidCtaButton>Попробовать бесплатно</LiquidCtaButton>
+            <LiquidCtaButton>Рассчитать доставку</LiquidCtaButton>
           </a>
           <a
             href="#features"
             className="group flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            <span>Как это работает</span>
+            <span>Как мы работаем</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>
 
-        {/* Social proof */}
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <div className="flex items-center gap-4">
-            <div className="flex -space-x-3">
-              <img
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
-                alt="User avatar"
-                className="w-10 h-10 rounded-full border-2 border-zinc-950 hover:-translate-y-1 transition object-cover z-[1]"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200"
-                alt="User avatar"
-                className="w-10 h-10 rounded-full border-2 border-zinc-950 hover:-translate-y-1 transition object-cover z-[2]"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&auto=format&fit=crop"
-                alt="User avatar"
-                className="w-10 h-10 rounded-full border-2 border-zinc-950 hover:-translate-y-1 transition object-cover z-[3]"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200"
-                alt="User avatar"
-                className="w-10 h-10 rounded-full border-2 border-zinc-950 hover:-translate-y-1 transition object-cover z-[4]"
-              />
-              <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200"
-                alt="User avatar"
-                className="w-10 h-10 rounded-full border-2 border-zinc-950 hover:-translate-y-1 transition object-cover z-[5]"
-              />
-            </div>
-            <div className="h-8 w-px bg-zinc-800" />
-            <div className="flex flex-col items-start">
-              <div className="flex items-center gap-1">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <svg
-                    key={i}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="#FACC15"
-                    stroke="#FACC15"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />
-                  </svg>
-                ))}
-                <span className="text-zinc-400 font-medium ml-1 text-sm">5.0</span>
+        {/* Delivery route illustration */}
+        <div className="mt-16 relative max-w-2xl mx-auto">
+          <div className="absolute -top-3 right-2 sm:right-6 z-10 bg-zinc-900 border border-zinc-800 rounded-2xl px-4 py-2.5 text-left shadow-xl">
+            <p className="text-[10px] text-zinc-500 uppercase tracking-wider">Доставка от</p>
+            <p className="font-display text-lg font-bold text-white leading-none">0.9 $/кг</p>
+          </div>
+
+          <div className="rounded-3xl bg-zinc-900/60 border border-zinc-800 p-6 sm:p-10">
+            <div className="flex items-center justify-between">
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-14 h-14 rounded-2xl bg-zinc-950 border border-zinc-800 flex items-center justify-center">
+                  <Icon name="MapPin" className="w-6 h-6 text-blue-400" />
+                </div>
+                <div className="text-center">
+                  <p className="text-sm font-semibold text-zinc-100">Гуанчжоу</p>
+                  <p className="text-[10px] text-zinc-500">CN</p>
+                </div>
               </div>
-              <p className="text-sm text-zinc-500">
-                Нам доверяют <span className="text-zinc-300 font-medium">10 000+</span> разработчиков
-              </p>
+
+              <div className="flex-1 relative mx-2 flex items-center">
+                <div className="w-full border-t border-dashed border-zinc-700" />
+                <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                  <Icon name="Plane" className="w-5 h-5 text-white" />
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center">
+                  <Icon name="MapPin" className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-center">
+                  <p className="text-sm font-semibold text-zinc-100">Москва</p>
+                  <p className="text-[10px] text-zinc-500">RU</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
+              {["Авиа", "Море", "Авто", "Ж/Д"].map((mode, i) => (
+                <span
+                  key={mode}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium ${
+                    i === 0
+                      ? "bg-blue-600 text-white"
+                      : "bg-zinc-800/70 text-zinc-300 border border-zinc-700"
+                  }`}
+                >
+                  {mode}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="absolute -bottom-4 left-2 sm:left-6 bg-zinc-900 border border-zinc-800 rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl">
+            <div className="w-9 h-9 rounded-xl bg-emerald-500/15 flex items-center justify-center">
+              <Icon name="Package" className="w-5 h-5 text-emerald-400" />
+            </div>
+            <div className="text-left">
+              <p className="text-[10px] text-zinc-500">Трек C2R-8842</p>
+              <p className="text-sm font-semibold text-zinc-100">На складе в Москве</p>
             </div>
           </div>
         </div>

@@ -2,46 +2,50 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    description: "Идеален для пет-проектов и небольших команд",
-    price: "0 ₽",
-    period: "навсегда",
-    features: ["До 3 участников", "5 проектов", "Базовая аналитика", "Поддержка сообщества", "1 ГБ хранилища"],
-    cta: "Начать",
+    name: "Авиа",
+    description: "Когда важна скорость доставки",
+    price: "от 0.9 $/кг",
+    period: "",
+    features: [
+      "Срок 10–18 дней",
+      "Для срочных и лёгких грузов",
+      "Отслеживание по трек-номеру",
+      "Беспроцентный выкуп",
+      "Консолидация груза",
+    ],
+    cta: "Рассчитать авиа",
     highlighted: false,
   },
   {
-    name: "Про",
-    description: "Для растущих команд с высокими требованиями",
-    price: "2 900 ₽",
-    period: "/мес",
+    name: "Море",
+    description: "Оптимально по цене для больших партий",
+    price: "по запросу",
+    period: "",
     features: [
-      "Безлимит участников",
-      "Безлимит проектов",
-      "Расширенная аналитика",
-      "Приоритетная поддержка",
-      "100 ГБ хранилища",
-      "Свои интеграции",
-      "Доступ к API",
+      "Самая выгодная стоимость за кг",
+      "Для крупных и тяжёлых партий",
+      "Помощь с документами и таможней",
+      "Беспроцентный выкуп",
+      "Консолидация груза",
+      "Фулфилмент под маркетплейсы",
     ],
-    cta: "Попробовать бесплатно",
+    cta: "Рассчитать море",
     highlighted: true,
   },
   {
-    name: "Бизнес",
-    description: "Для крупных организаций с особыми требованиями",
-    price: "По запросу",
+    name: "Под ключ",
+    description: "Полный цикл от поиска товара до склада",
+    price: "индивидуально",
     period: "",
     features: [
-      "Все из тарифа Про",
+      "Поиск товара и поставщика",
+      "Беспроцентный выкуп",
+      "Любой вид транспорта",
+      "Фулфилмент и маркировка",
       "Персональный менеджер",
-      "Индивидуальный SLA",
-      "On-premise развертывание",
-      "Безлимит хранилища",
-      "Расширенная безопасность",
-      "Обучение и онбординг",
+      "Доставка на ваш склад",
     ],
-    cta: "Связаться с нами",
+    cta: "Обсудить проект",
     highlighted: false,
   },
 ]
@@ -52,12 +56,12 @@ export function PricingSection() {
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">Тарифы</p>
+          <p className="text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Тарифы</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-zinc-100 mb-4">
-            Простые и понятные цены
+            Прозрачная стоимость доставки
           </h2>
-          <p className="text-zinc-500 max-w-xl mx-auto text-balance text-lg">
-            Никаких скрытых платежей. Никаких сюрпризов. Выберите подходящий план.
+          <p className="text-zinc-400 max-w-xl mx-auto text-balance text-lg">
+            Никаких скрытых комиссий. Выберите подходящий способ доставки или закажите весь цикл под ключ.
           </p>
         </div>
 
@@ -67,37 +71,37 @@ export function PricingSection() {
             <div
               key={plan.name}
               className={`p-8 rounded-2xl border flex flex-col h-full ${
-                plan.highlighted ? "bg-zinc-100 border-zinc-100" : "bg-zinc-900/50 border-zinc-800/50"
+                plan.highlighted ? "bg-blue-600 border-blue-600" : "bg-zinc-900/50 border-zinc-800/50"
               }`}
             >
               {/* Plan Header */}
               <div className="mb-6">
                 <h3
                   className={`font-heading text-xl font-semibold mb-2 ${
-                    plan.highlighted ? "text-zinc-900" : "text-zinc-100"
+                    plan.highlighted ? "text-white" : "text-zinc-100"
                   }`}
                 >
                   {plan.name}
                 </h3>
-                <p className={`text-sm ${plan.highlighted ? "text-zinc-600" : "text-zinc-500"}`}>{plan.description}</p>
+                <p className={`text-sm ${plan.highlighted ? "text-blue-100" : "text-zinc-500"}`}>{plan.description}</p>
               </div>
 
               {/* Price */}
               <div className="mb-6">
                 <span
-                  className={`font-display text-4xl font-bold ${plan.highlighted ? "text-zinc-900" : "text-zinc-100"}`}
+                  className={`font-display text-4xl font-bold ${plan.highlighted ? "text-white" : "text-zinc-100"}`}
                 >
                   {plan.price}
                 </span>
-                <span className={`text-sm ${plan.highlighted ? "text-zinc-600" : "text-zinc-500"}`}>{plan.period}</span>
+                <span className={`text-sm ${plan.highlighted ? "text-blue-100" : "text-zinc-500"}`}>{plan.period}</span>
               </div>
 
               {/* Features */}
               <ul className="space-y-3 mb-8 flex-1">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <Check className={`w-5 h-5 shrink-0 ${plan.highlighted ? "text-zinc-900" : "text-zinc-400"}`} />
-                    <span className={`text-sm ${plan.highlighted ? "text-zinc-700" : "text-zinc-400"}`}>{feature}</span>
+                    <Check className={`w-5 h-5 shrink-0 ${plan.highlighted ? "text-white" : "text-blue-400"}`} />
+                    <span className={`text-sm ${plan.highlighted ? "text-blue-50" : "text-zinc-400"}`}>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -107,7 +111,7 @@ export function PricingSection() {
                 href="#"
                 className={`block w-full py-3 px-6 text-center rounded-full font-medium text-sm transition-colors mt-auto ${
                   plan.highlighted
-                    ? "bg-zinc-900 text-zinc-100 hover:bg-zinc-800"
+                    ? "bg-white text-blue-600 hover:bg-blue-50"
                     : "bg-zinc-800 text-zinc-100 hover:bg-zinc-700"
                 }`}
               >

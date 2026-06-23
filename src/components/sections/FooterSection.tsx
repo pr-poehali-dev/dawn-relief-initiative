@@ -1,22 +1,22 @@
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Send, Phone, Mail } from "lucide-react"
 
 const footerLinks = {
   product: [
-    { label: "Функции", href: "#features" },
+    { label: "Услуги", href: "#features" },
+    { label: "Клиенты", href: "#clients" },
+    { label: "Отзывы", href: "#testimonials" },
     { label: "Тарифы", href: "#pricing" },
-    { label: "Обновления", href: "#" },
-    { label: "Документация", href: "#" },
   ],
   company: [
-    { label: "О нас", href: "#" },
-    { label: "Блог", href: "#" },
-    { label: "Вакансии", href: "#" },
-    { label: "Контакты", href: "#" },
+    { label: "Поиск товара", href: "#features" },
+    { label: "Беспроцентный выкуп", href: "#features" },
+    { label: "Консолидация груза", href: "#features" },
+    { label: "Фулфилмент", href: "#features" },
   ],
   legal: [
-    { label: "Приватность", href: "#" },
-    { label: "Условия", href: "#" },
-    { label: "Безопасность", href: "#" },
+    { label: "Политика конфиденциальности", href: "#" },
+    { label: "Договор оферты", href: "#" },
+    { label: "Реквизиты", href: "#" },
   ],
 }
 
@@ -27,17 +27,22 @@ export function FooterSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <a href="/" className="font-display text-xl font-semibold text-zinc-100">
-              Velocite
+            <a href="/" className="flex items-center gap-2">
+              <img
+                src="https://cdn.poehali.dev/files/c5707feb-c7d1-42f2-b8ee-7975a0549d48.jpg"
+                alt="C2R Logistics"
+                className="h-7 w-7 rounded-md object-cover"
+              />
+              <span className="font-display text-xl font-semibold text-zinc-100">C2R Logistics</span>
             </a>
             <p className="mt-4 text-sm text-zinc-500 max-w-xs">
-              Создавай быстрее, запускай умнее. Платформа для современных команд.
+              Доставка товаров из Китая в Россию «под ключ». Помогаем бизнесу увеличить прибыль и достичь максимальных результатов.
             </p>
           </div>
 
           {/* Product Links */}
           <div>
-            <h4 className="font-heading text-sm font-semibold text-zinc-100 mb-4">Продукт</h4>
+            <h4 className="font-heading text-sm font-semibold text-zinc-100 mb-4">Навигация</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
@@ -51,7 +56,7 @@ export function FooterSection() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-heading text-sm font-semibold text-zinc-100 mb-4">Компания</h4>
+            <h4 className="font-heading text-sm font-semibold text-zinc-100 mb-4">Услуги</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -80,16 +85,16 @@ export function FooterSection() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-zinc-600">© {new Date().getFullYear()} Velocite. Все права защищены.</p>
+          <p className="text-sm text-zinc-600">© {new Date().getFullYear()} C2R Logistics. Все права защищены.</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="GitHub">
-              <Github className="w-5 h-5" />
+            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="Telegram">
+              <Send className="w-5 h-5" />
             </a>
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="Twitter">
-              <Twitter className="w-5 h-5" />
+            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="Телефон">
+              <Phone className="w-5 h-5" />
             </a>
-            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
+            <a href="#" className="text-zinc-500 hover:text-zinc-300 transition-colors" aria-label="Email">
+              <Mail className="w-5 h-5" />
             </a>
           </div>
         </div>

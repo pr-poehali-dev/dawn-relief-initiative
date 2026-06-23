@@ -3,58 +3,58 @@ import { TestimonialsColumn } from "@/components/ui/testimonials-column"
 
 const testimonials = [
   {
-    text: "Velocite сократил наш пайплайн деплоя с 4 часов до 12 минут. Автоматизация кардинально изменила наш CI/CD процесс.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-    name: "Анна Смирнова",
-    role: "CTO в TechFlow Solutions",
-  },
-  {
-    text: "Мы изучили 15 платформ, прежде чем выбрать Velocite. ROI стал очевиден уже в первый месяц использования.",
+    text: "Заказывали партию товара для маркетплейса. C2R сами нашли поставщика, выкупили и привезли в Москву за 18 дней. Всё чётко по треку.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    name: "Максим Волков",
-    role: "VP Engineering в Quantum Dynamics",
+    name: "Дмитрий Соколов",
+    role: "Селлер на Wildberries",
   },
   {
-    text: "Наша команда выпустила в 3 раза больше фич за квартал. Инструменты совместной работы сделали удаленку бесшовной.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-    name: "Елена Родригес",
-    role: "Head of Product в Alpine Ventures",
+    text: "Раньше работали с тремя посредниками, теперь всё в одном окне. Беспроцентный выкуп реально экономит деньги на каждой партии.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+    name: "Марина Левина",
+    role: "Владелец интернет-магазина",
   },
   {
-    text: "Онбординг прошел невероятно гладко. Вся команда разработки стала продуктивной уже на первой неделе.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    name: "Дмитрий Парк",
-    role: "IT-директор в Stellar Analytics",
-  },
-  {
-    text: "Поддержка клиентов на высоте. Помогли мигрировать всю инфраструктуру с нулевым даунтаймом.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
-    name: "Анна Ковальски",
-    role: "Операционный директор в Nova Industries",
-  },
-  {
-    text: "API-интеграции сэкономили сотни часов разработки. Все работает из коробки.",
+    text: "Консолидировали груз от 5 разных фабрик в одну отправку. Сэкономили на логистике почти треть бюджета. Спасибо команде!",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-    name: "Алексей Вилсон",
-    role: "CEO в Meridian Tech",
+    name: "Артём Кузнецов",
+    role: "Закупщик, оптовая торговля",
   },
   {
-    text: "Velocite изменил наш подход к релизам. Откаты, занимавшие часы, теперь происходят за секунды.",
+    text: "Фулфилмент под Ozon сделали идеально: упаковка, маркировка, отгрузка. Товар приняли на складе без единого замечания.",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+    name: "Елена Воронова",
+    role: "Бренд-менеджер",
+  },
+  {
+    text: "Боялись связываться с Китаем сами. C2R взяли весь процесс на себя — от поиска товара до доставки на склад. Очень удобно.",
     image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face",
-    name: "Лиза Томпсон",
-    role: "DevOps Lead в Cascade Systems",
+    name: "Игорь Мельников",
+    role: "Предприниматель",
   },
   {
-    text: "Аналитический дашборд дает инсайты, которых у нас раньше не было. Data-driven решения стали нормой.",
+    text: "Доставка авиа от 0.9 $/кг — лучшее предложение на рынке из тех, что мы нашли. И сроки не подвели ни разу за год работы.",
     image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face",
-    name: "Михаил Чен",
-    role: "Product Manager в Vertex Labs",
+    name: "Алексей Тарасов",
+    role: "Директор по закупкам",
   },
   {
-    text: "Частота деплоев выросла в 5 раз без дополнительных затрат на инфраструктуру. Впечатляющая платформа.",
+    text: "Менеджер всегда на связи, по треку видно где груз. Прозрачность на каждом этапе — это то, чего не хватало у прошлых перевозчиков.",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+    name: "Ольга Никитина",
+    role: "Логист, розничная сеть",
+  },
+  {
+    text: "Привезли крупногабарит морем без проблем с таможней. Помогли с документами и сертификацией. Рекомендую как надёжного партнёра.",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    name: "Сергей Павлов",
+    role: "Импортёр оборудования",
+  },
+  {
+    text: "Работаем уже второй год. С C2R прибыль выросла, потому что себестоимость доставки стала ниже, а головной боли — меньше.",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-    name: "Рахиль Ким",
-    role: "Engineering Manager в Prism Digital",
+    name: "Наталья Громова",
+    role: "Совладелец бизнеса",
   },
 ]
 
@@ -62,7 +62,7 @@ const firstColumn = testimonials.slice(0, 3)
 const secondColumn = testimonials.slice(3, 6)
 const thirdColumn = testimonials.slice(6, 9)
 
-const logos = ["TechFlow", "Quantum Dynamics", "Alpine Ventures", "Stellar Analytics", "Nova Industries", "Meridian Tech"]
+const logos = ["Wildberries", "Ozon", "Яндекс Маркет", "СберМегаМаркет", "Розничные сети", "Оптовые компании"]
 
 export function TestimonialsSection() {
   return (
@@ -75,13 +75,13 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center max-w-xl mx-auto mb-12"
         >
-          <div className="border border-zinc-800 py-1.5 px-4 rounded-full text-sm text-zinc-400">Отзывы</div>
+          <div className="border border-zinc-800 py-1.5 px-4 rounded-full text-sm text-blue-400">Отзывы</div>
 
           <h2 className="font-display text-4xl md:text-5xl font-bold text-zinc-100 mt-6 text-center tracking-tight">
-            Что говорят пользователи
+            Что говорят наши клиенты
           </h2>
-          <p className="text-center mt-4 text-zinc-500 text-lg text-balance">
-            Узнайте мнение наших клиентов о платформе.
+          <p className="text-center mt-4 text-zinc-400 text-lg text-balance">
+            Реальные отзывы бизнеса, который возит товары из Китая вместе с нами.
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="mt-16 pt-16 border-t border-zinc-800/50">
-          <p className="text-center text-sm text-zinc-500 mb-8">Нам доверяют лидеры индустрии</p>
+          <p className="text-center text-sm text-zinc-500 mb-8">Нам доверяют поставщики маркетплейсов и оптовый бизнес</p>
           <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
             <motion.div
               className="flex gap-12 md:gap-16"
