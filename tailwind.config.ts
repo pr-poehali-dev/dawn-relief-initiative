@@ -24,6 +24,18 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				brand: {
+					blue: {
+						700: '#0B5C95',
+						600: '#0F75BB',
+						500: '#218901',
+						400: '#4BA3E8',
+						300: '#8AC4ED',
+						100: '#C0E6F7',
+						50:  '#EBF2FB',
+					},
+					green: '#075339',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

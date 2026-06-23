@@ -10,45 +10,45 @@ const stats = [
 
 export function ClientsSection() {
   return (
-    <section id="clients" className="px-6 py-24">
+    <section id="clients" className="px-6 py-24 bg-white">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="rounded-3xl border border-zinc-800 bg-gradient-to-br from-blue-950/40 via-zinc-900/60 to-zinc-900/60 p-8 md:p-12"
+          className="rounded-3xl border border-[#C0E6F7] bg-gradient-to-br from-[#EBF2FB] via-white to-white p-8 md:p-12"
         >
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Icon block */}
             <div className="flex-shrink-0">
               <div className="relative">
-                <div className="w-28 h-28 rounded-3xl bg-blue-600 flex items-center justify-center shadow-2xl shadow-blue-600/30">
+                <div className="w-28 h-28 rounded-3xl bg-[#0B5C95] flex items-center justify-center shadow-xl shadow-blue-900/20">
                   <Icon name="Users" className="w-14 h-14 text-white" />
                 </div>
-                <div className="absolute -bottom-3 -right-3 bg-zinc-950 border border-zinc-800 rounded-2xl px-3 py-1.5">
-                  <span className="font-display text-xl font-bold text-blue-400">200+</span>
+                <div className="absolute -bottom-3 -right-3 bg-white border border-gray-200 rounded-2xl px-3 py-1.5 shadow-md">
+                  <span className="font-display text-xl font-bold text-[#0B5C95]">200+</span>
                 </div>
               </div>
             </div>
 
             {/* Text */}
             <div className="flex-1 text-center md:text-left">
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-3">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 Более 200 довольных клиентов выбирают нас
               </h2>
-              <p className="text-zinc-400 max-w-xl text-balance">
+              <p className="text-gray-500 max-w-xl text-balance">
                 Компании по всей России доверяют C2R Logistics доставку товаров из Китая — потому что мы берём на себя весь процесс и отвечаем за результат.
               </p>
             </div>
           </div>
 
           {/* Stats row */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 pt-8 border-t border-zinc-800/70">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-10 pt-8 border-t border-[#C0E6F7]">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center md:text-left">
-                <p className="font-display text-2xl md:text-3xl font-bold text-zinc-100">{stat.value}</p>
-                <p className="text-sm text-zinc-500 mt-1">{stat.label}</p>
+                <p className="font-display text-2xl md:text-3xl font-bold text-[#0B5C95]">{stat.value}</p>
+                <p className="text-sm text-gray-500 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>

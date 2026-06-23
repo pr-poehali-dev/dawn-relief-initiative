@@ -37,9 +37,8 @@ const services = [
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="px-6 py-24">
+    <section id="features" className="px-6 py-24 bg-gray-50">
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,11 +46,11 @@ export function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <p className="text-sm font-medium text-blue-400 uppercase tracking-wider mb-4">Услуги</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-zinc-100 mb-4">
+          <p className="text-sm font-medium text-[#075339] uppercase tracking-wider mb-4">Услуги</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Полный цикл доставки из Китая
           </h2>
-          <p className="text-zinc-400 max-w-xl mx-auto text-balance">
+          <p className="text-gray-500 max-w-xl mx-auto text-balance">
             Берём на себя всё — от поиска товара до доставки на ваш склад. Вам остаётся только продавать.
           </p>
         </motion.div>
@@ -65,13 +64,13 @@ export function FeaturesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
             >
-              <Card className="group h-full overflow-hidden border-zinc-800/50 bg-zinc-900/50 hover:border-blue-600/40 transition-all duration-300 rounded-2xl">
+              <Card className="group h-full overflow-hidden border-gray-200 bg-white hover:border-[#8AC4ED] hover:shadow-md transition-all duration-300 rounded-2xl">
                 <CardContent className="p-6">
-                  <div className="w-11 h-11 rounded-xl bg-blue-600/15 flex items-center justify-center mb-4 group-hover:bg-blue-600/25 transition-colors">
-                    <Icon name={service.icon} className="w-5 h-5 text-blue-400" />
+                  <div className="w-11 h-11 rounded-xl bg-[#EBF2FB] flex items-center justify-center mb-4 group-hover:bg-[#C0E6F7] transition-colors">
+                    <Icon name={service.icon} className="w-5 h-5 text-[#0B5C95]" />
                   </div>
-                  <p className="font-heading font-semibold text-zinc-100 mb-2">{service.title}</p>
-                  <p className="text-zinc-500 text-sm leading-relaxed">{service.description}</p>
+                  <p className="font-heading font-semibold text-gray-900 mb-2">{service.title}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
